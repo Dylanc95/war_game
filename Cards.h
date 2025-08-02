@@ -1,5 +1,3 @@
-#include <iostream>
-using namespace std;
 
 #ifndef CARDS_H
 #define CARDS_H
@@ -18,9 +16,9 @@ public:
     string getSuit();
 
     //Setters
-    string setFace(string _face);
-    string setValue(int _value);
-    string setSuit(string _suit);
-}
+    void setFace(string _face);
+    void setValue(int _value);
+    void setSuit(string _suit);
+};
 
 #endif //CARDS_H
