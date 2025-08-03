@@ -1,6 +1,10 @@
-
 #ifndef CARDS_H
 #define CARDS_H
+
+#include <string>
+
+using namespace std;
+
 class Cards {
 private:
     string face;
@@ -8,7 +12,7 @@ private:
     string suit;
 
 public:
-    Cards(string _face, int _value, string _suit); //Constructor for building the cards
+    Cards(const string &_face, int _value, const string &_suit); //Constructor for building the cards
 
     //Getters
     string getFace();
@@ -16,9 +20,9 @@ public:
     string getSuit();
 
     //Setters
-    void setFace(string _face);
+    void setFace(const string &_face);
     void setValue(int _value);
-    void setSuit(string _suit);
+    void setSuit(const string &_suit);
 };
 
 #endif //CARDS_H

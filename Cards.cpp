@@ -1,6 +1,9 @@
 #include "Cards.h"
+#include <string>
 
-Cards::Cards(string _face, int _value, string _suit) {
+using namespace std;
+
+Cards::Cards(const string &_face, const int _value, const string &_suit) {
     face = _face;
     value = _value;
     suit = _suit;
@@ -18,12 +21,12 @@ string Cards::getSuit() {
 }
 
 //setters
-void Cards::setFace(string _face) {
+void Cards::setFace(const string &_face) {
     face = _face;
 }
-void Cards::setValue(int _value) {
+void Cards::setValue(const int _value) {
     value = _value;
 }
-void Cards::setSuit(string _suit) {
+void Cards::setSuit(const string &_suit) {
     suit = _suit;
 }
