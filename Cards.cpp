@@ -13,7 +13,7 @@ Cards::Cards(const string &_face, const int _value, const string &_suit) {
 string Cards::getFace() {
     return face;
 }
-int Cards::getValue() {
+int Cards::getValue() const {
     return value;
 }
 string Cards::getSuit() {

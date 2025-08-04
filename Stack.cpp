@@ -1,33 +1,34 @@
 #include "Stack.h"
-#include <iostream>
+#include <stdexcept>
+using namespace std;
 
-Stack::Stack() {
-    tos = -1;
+void Stack::push(const Cards& card) {
+    stack.push_back(card);
 }
 
-Stack::~Stack() {} //TODO: finish method
-
-void Stack::push() {} //TODO: finish method
-
-void Stack::pop() {} //TODO: finish method
-
-int Stack::peek() const {} //TODO: finish method
-
-bool Stack::isEmpty() const {
-    if (tos == -1) {
-        return true;
+void Stack::pop() {
+    if (!stack.empty()) {
+        stack.pop_back();
     }
     else {
-        return false;
+        throw out_of_range("Stack is empty");
     }
 }
 
-bool Stack::isFull() const {} //TODO: finish method
-
-void Stack::setTos(int _tos) {
-    tos = _tos;
+Cards Stack::peek() const {
+    if (!stack.empty()) {
+        return stack.back();
+    }
+    else {
+        throw out_of_range("Stack is empty");
+    }
 }
 
-int Stack::getTos() const {
-    return tos;
+bool Stack::isEmpty() const {
+    return stack.empty();
+}
+
+int Stack::size() const {
+    return stack.size(); // NOLINT(*-narrowing-conversions)
+}
 }

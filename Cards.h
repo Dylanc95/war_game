@@ -16,7 +16,7 @@ public:
 
     //Getters
     string getFace();
-    int getValue();
+    int getValue() const;
     string getSuit();
 
     //Setters

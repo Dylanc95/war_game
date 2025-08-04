@@ -1,19 +1,23 @@
 #ifndef STACK_H
 #define STACK_H
+
+#include <vector>
+#include "Cards.h"
+
+using namespace std;
+
+class Cards;
+
 class Stack {
 private:
     int tos;
+    vector<Cards> stack;
 
 public:
-    Stack();
-    ~Stack();
-    void push(); //TODO: fix this to add card object
+    void push(const Cards& card); //TODO: fix this to add card object
     void pop();
-    int peek() const; //TODO: fix this to return a card object
+    Cards peek() const; //TODO: fix this to return a card object
     bool isEmpty() const;
-    bool isFull() const;
-
-    void setTos(int _tos);
-    int getTos() const;
+    int size() const;
 };
 #endif //STACK_H
