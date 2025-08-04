@@ -23,6 +23,8 @@ public:
     void setFace(const string &_face);
     void setValue(int _value);
     void setSuit(const string &_suit);
+
+    void printCardInfo();
 };
 
 #endif //CARDS_H

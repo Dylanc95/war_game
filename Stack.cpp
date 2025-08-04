@@ -31,4 +31,3 @@ bool Stack::isEmpty() const {
 int Stack::size() const {
     return stack.size(); // NOLINT(*-narrowing-conversions)
 }
-}

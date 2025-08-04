@@ -10,4 +10,6 @@ add_executable(war_game
         Cards.h
         main.cpp
         Stack.cpp
-        Stack.h)
+        Stack.h
+        tests.h
+        tests.cpp)

@@ -2,7 +2,6 @@
 #define TESTS_H
 class Tests {
     public:
-    void cardsTest();
-    void stackTest();
+    static void cardsTest();
 };
 #endif //TESTS_H

@@ -1,4 +1,5 @@
 #include "Cards.h"
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -29,4 +30,8 @@ void Cards::setValue(const int _value) {
 }
 void Cards::setSuit(const string &_suit) {
     suit = _suit;
+}
+
+void Cards::printCardInfo() {
+    cout << getFace() << " of " << getSuit() << " has a value of " << getValue() << endl;
 }
