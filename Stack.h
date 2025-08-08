@@ -10,13 +10,13 @@ class Cards;
 
 class Stack {
 private:
-    int tos;
     vector<Cards> stack;
 
 public:
-    void push(const Cards& card); //TODO: fix this to add card object
+    Stack();
+    void push(const Cards& card);
     void pop();
-    Cards peek() const; //TODO: fix this to return a card object
+    Cards peek() const;
     bool isEmpty() const;
     int size() const;
 };

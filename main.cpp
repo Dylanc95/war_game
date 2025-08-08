@@ -10,4 +10,5 @@ int main() {
 
 
     //Tests::cardsTest();
+    Tests::stacktest();
 }

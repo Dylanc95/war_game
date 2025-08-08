@@ -2,11 +2,15 @@
 #include <stdexcept>
 using namespace std;
 
+Stack::Stack() {
+    vector<Cards> stack {};
+}
+
 void Stack::push(const Cards& card) {
     stack.push_back(card);
 }
 
-void Stack::pop() {
+void Stack::pop() { //TODO: fix method to return Cards object
     if (!stack.empty()) {
         stack.pop_back();
     }
